@@ -1,0 +1,77 @@
+#+TITLE: ITWS-2 Assignment-4
+#+AUTHOR: Vishrut Mehta-201102128
+#+EMAIL: vishrut.mehta@students.iiit.ac.in
+
+*Name : Vishrut Mehta*
+
+*Roll no. : 201102128*
+* _Code Organization_:
+** Class 1:
+- the actual robot is made here in the first class and then i have encapsulated all the fields in that class. 
+** Class 2:
+- my code comprises of two module...One contains all the funcyions like game1,game2,game3,start1,start2,start3....
+* _Class decomposition_:
+- i have made two classes ...
+** Class box1():
+ - Actually i have done encapsulation in this class.The aking of my robot is done in this.I defined many functions like lenght,breath,move,list1....these fields i am encapsulating it into robot1..
+#+BEGIN_EXAMPLE
+class box1():
+	pass
+def robot1(listing):
+	b=box1()
+	b.length=3;#change
+	b.breadth=3;#c
+	b.startx=listing[0]
+	b.starty=listing[1] 
+	b.list1=[b.startx,b.starty,b.startx+b.length,b.starty+b.breadth]
+	def length():
+		return b.length
+	def breadth():
+		return b.breadth
+	def list1():
+		return b.list1
+	def xstart():
+		return b.startx
+	def ystart():
+		return b.starty
+	def move(newlist):
+	 	b.startx=newlist[0]
+		b.starty=newlist[1]
+		b.list1=[b.startx,b.starty,b.startx+b.length,b.starty+b.breadth]
+	a=box1() 
+	a.length=length
+	a.breadth=breadth
+	a.list1=list1
+	a.move=move
+	a.xstart=xstart
+	a.ystart=ystart
+	return a
+robot = robot1([10,15])
+#+END_EXAMPLE
+this the encapsulation that i have done on different fields
+** Class work():
+- this class i have added all my fuction so that i could make it an object orinted code....
+- the object that i have made..i am initializing all things at the starting...and i am calling the object at the last.
+* _Advantages_:
+** Use of classes:
+- Reduces the lenght of code
+- Increases the efficiency
+- A simple declaration runs the entire program..
+
+Yes,my design is quite flexble that you can reuse the codefor a different GUI.
+ 
+* _Miscellaneous_:
+-firstly the robot is made by calling the class box1 and function robot1 encapsulating different fields into it..
+And at last i am calling the main class which has all my function to work ...it consits 6 function start1,start2,start3,game1,game2,game3....
+* _Extra Features_:
+-i have varied the speed in each level...i have made 3 level
+** 1st level:
+it comprises ofthe robot and the normal defuse codes ..
+** 2nd level:
+it comprises of two window obtacles..if ot touches it the game will end...
+** 3rd level:
+it comprises of two window obstacles located in any place and 4 mimes...so if iy touches any of them ...the game will end directly...
+* Screenshot1:
+[[file:screenshot1.png][Image1]]
+* Scrrenshot2:
+  [[file:screenshot2.png][Image2]]

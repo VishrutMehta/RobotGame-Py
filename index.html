@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ITWS-2 Assignment-4</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="ITWS-2 Assignment-4"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-03-28 19:10:04 MVT"/>
+<meta name="author" content="Vishrut Mehta-201102128"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">ITWS-2 Assignment-4</h1>
+
+<p><b>Name : Vishrut Mehta</b>
+</p>
+<p>
+<b>Roll no. : 201102128</b>
+</p>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 <span style="text-decoration:underline;">Code Organization</span>:</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Class 1:</a></li>
+<li><a href="#sec-1-2">1.2 Class 2:</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 <span style="text-decoration:underline;">Class decomposition</span>:</a>
+<ul>
+<li><a href="#sec-2-1">2.1 Class box1():</a></li>
+<li><a href="#sec-2-2">2.2 Class work():</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 <span style="text-decoration:underline;">Advantages</span>:</a>
+<ul>
+<li><a href="#sec-3-1">3.1 Use of classes:</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 <span style="text-decoration:underline;">Miscellaneous</span>:</a></li>
+<li><a href="#sec-5">5 <span style="text-decoration:underline;">Extra Features</span>:</a>
+<ul>
+<li><a href="#sec-5-1">5.1 1st level:</a></li>
+<li><a href="#sec-5-2">5.2 2nd level:</a></li>
+<li><a href="#sec-5-3">5.3 3rd level:</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6 Screenshot1:</a></li>
+<li><a href="#sec-7">7 Scrrenshot2:</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> <span style="text-decoration:underline;">Code Organization</span>:</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Class 1:</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>the actual robot is made here in the first class and then i have encapsulated all the fields in that class. 
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Class 2:</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ul>
+<li>my code comprises of two module&hellip;One contains all the funcyions like game1,game2,game3,start1,start2,start3&hellip;.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> <span style="text-decoration:underline;">Class decomposition</span>:</h2>
+<div class="outline-text-2" id="text-2">
+
+<ul>
+<li>i have made two classes &hellip;
+</li>
+</ul>
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Class box1():</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<ul>
+<li>Actually i have done encapsulation in this class.The aking of my robot is done in this.I defined many functions like lenght,breath,move,list1&hellip;.these fields i am encapsulating it into robot1..
+</li>
+</ul>
+
+
+
+
+<pre class="example">class box1():
+        pass
+def robot1(listing):
+        b=box1()
+        b.length=3;#change
+        b.breadth=3;#c
+        b.startx=listing[0]
+        b.starty=listing[1] 
+        b.list1=[b.startx,b.starty,b.startx+b.length,b.starty+b.breadth]
+        def length():
+                return b.length
+        def breadth():
+                return b.breadth
+        def list1():
+                return b.list1
+        def xstart():
+                return b.startx
+        def ystart():
+                return b.starty
+        def move(newlist):
+                b.startx=newlist[0]
+                b.starty=newlist[1]
+                b.list1=[b.startx,b.starty,b.startx+b.length,b.starty+b.breadth]
+        a=box1() 
+        a.length=length
+        a.breadth=breadth
+        a.list1=list1
+        a.move=move
+        a.xstart=xstart
+        a.ystart=ystart
+        return a
+robot = robot1([10,15])
+</pre>
+
+<p>
+this the encapsulation that i have done on different fields
+</p></div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Class work():</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ul>
+<li>this class i have added all my fuction so that i could make it an object orinted code&hellip;.
+</li>
+<li>the object that i have made..i am initializing all things at the starting&hellip;and i am calling the object at the last.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> <span style="text-decoration:underline;">Advantages</span>:</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Use of classes:</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<ul>
+<li>Reduces the lenght of code
+</li>
+<li>Increases the efficiency
+</li>
+<li>A simple declaration runs the entire program..
+</li>
+</ul>
+
+
+<p>
+Yes,my design is quite flexble that you can reuse the codefor a different GUI.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> <span style="text-decoration:underline;">Miscellaneous</span>:</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>-firstly the robot is made by calling the class box1 and function robot1 encapsulating different fields into it..
+And at last i am calling the main class which has all my function to work &hellip;it consits 6 function start1,start2,start3,game1,game2,game3&hellip;.
+</p></div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> <span style="text-decoration:underline;">Extra Features</span>:</h2>
+<div class="outline-text-2" id="text-5">
+
+<p>-i have varied the speed in each level&hellip;i have made 3 level
+</p>
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> 1st level:</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<p>it comprises ofthe robot and the normal defuse codes ..
+</p></div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> 2nd level:</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<p>it comprises of two window obtacles..if ot touches it the game will end&hellip;
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 3rd level:</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<p>it comprises of two window obstacles located in any place and 4 mimes&hellip;so if iy touches any of them &hellip;the game will end directly&hellip;
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Screenshot1:</h2>
+<div class="outline-text-2" id="text-6">
+
+<p><a href="screenshot1.png">Image1</a>
+</p></div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Scrrenshot2:</h2>
+<div class="outline-text-2" id="text-7">
+
+<p>  <a href="screenshot2.png">Image2</a>
+  /img/org-mode-screenshot1.png
+</p></div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2012-03-28 19:10:04 MVT</p>
+<p class="author">Author: Vishrut Mehta-201102128</p>
+<p class="creator">Org version 7.8.03 with Emacs version 23</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
